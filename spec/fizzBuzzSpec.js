@@ -8,4 +8,7 @@ describe('fizzbuzz', function () {
     it('return "FizzBuzz" when passed a multiple of both 3 and 5', function () {
         expect(fizzbuzz(15)).toEqual('FizzBuzz');
     });
+    it('return "the number" when passed a number that is not multiple of 3 or 5', function () {
+        expect(fizzbuzz(7)).toEqual(7);
+    });
 });
